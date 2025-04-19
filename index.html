@@ -4,101 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
-    <!-- The Header block of the webpage -->
-    <div class="header">
-        <div class="top-header-area">  
-            <div class="search">
-                <img src="Assets/Icons/search.svg"
-                     height=20rem width=20rem>
-                <input type="text" placeholder="search here" />
+    <div class="layout-container">
+        <!-- The Header block of the webpage -->
+        <div class="header">
+            <div class="top-header-area">  
+                <div class="search">
+                    <img src="Assets/Icons/search.svg"
+                        height=20rem width=20rem>
+                    <input type="text" placeholder="search here" />
+                </div>
+                <div class="hero-logo">
+                    <img src="Assets/Icons/bell.svg"
+                        height=20rem width=20rem>
+                    <img src="Assets/Logo/freepik__background__9512.png"
+                        height=70rem width=70rem>
+                    <a href="#">AlterMate</a>
+                </div>    
             </div>
-            <div class="hero-logo">
-                <img src="Assets/Icons/bell.svg"
-                     height=20rem width=20rem>
-                <img src="Assets/Logo/freepik__background__9512.png"
-                     height=70rem width=70rem>
-                <a href="#">AlterMate</a>
-            </div>    
+            
+            <div class="bottom-header-area">
+                <div class="hi-text-area">
+                    <img src="Assets/Logo/freepik__background__9512.png"
+                        height=100rem width=100rem>
+                    <div class="hi-text">
+                        <p class="small-hi-text">Hi there,</p>
+                        <p class="bigger-hi-text">AlterMate (@altmate)</p>
+                    </div>
+                </div>
+                <div class="header-button-area">
+                    <button class="new">New</button>
+                    <button class="upload">Upload</button>
+                    <button class="share">Share</button>
+                </div>
+            
+            </div>
         </div>
-        
-        <div class="bottom-header-area">
-            <div class="hi-text-area">
-                <img src="Assets/Logo/freepik__background__9512.png"
-                     height=100rem width=100rem>
-                <div class="hi-text">
-                    <p class="small-hi-text">Hi there,</p>
-                    <p class="bigger-hi-text">AlterMate (@altmate)</p>
+        <!-- The Sidebar block of the webpage -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="Assets/Icons/dashboard.svg"
+                    height=40rem width=50rem>
+                <h3>Dashboard</h3>
+            </div>
+            <div class="nav-icons">
+                <div class="home">
+                    <img src="Assets/Icons/home-outline.svg"
+                        height=23rem width=23rem>
+                    <p>Home</p>
+                </div>
+                <div class="profile">
+                    <img src="Assets/Icons/profile-outline.svg"
+                        height=23rem width=23rem>
+                    <p>Profile</p>
+                </div>
+                <div class="messages">
+                    <img src="Assets/Icons/message.svg"
+                        height=23rem width=23rem>
+                    <p>Messages</p>
+                </div>
+                <div class="history">
+                    <img src="Assets/Icons/clock-outline.svg"
+                        height=23rem width=23rem>
+                    <p>History</p>
+                </div>
+                <div class="tasks">
+                    <img src="Assets/Icons/tasks.svg"
+                        height=23rem width=23rem>
+                    <p>Tasks</p>
+                </div>
+                <div class="community">
+                    <img src="Assets/Icons/community.svg"
+                        height=23rem width=23rem>
+                    <p>Communities</p>
                 </div>
             </div>
-            <div class="header-button-area">
-                <button class="new">New</button>
-                <button class="upload">Upload</button>
-                <button class="share">Share</button>
+            <div class="setting">
+                <div class="settings">
+                    <img src="Assets/Icons/settings.svg"
+                        height=23rem width=23rem>
+                    <p>Settings</p>
+                </div>
+                <div class="support">
+                    <img src="Assets/Icons/support.svg"
+                        height=23rem width=23rem>
+                    <p>Support</p>
+                </div>
+                <div class="privacy">
+                    <img src="Assets/Icons/privacy.svg"
+                         height=23rem width=23rem>
+                    <p>Privacy</p>
+                </div>
             </div>
-           
         </div>
-    </div>
+        <!-- The main content area of the webpage -->
+        <div class="main-content">
+            <div class="projects">
+                <p>Your Projects</p>
+                <div class="projects-list">
+                    <div class="card-top-left">
+                        <h3>Super Cool Project</h3>
+                        <p>Some Text</p>
+                    </div>
+                    <div class="card-top-right">
+                        <h3>Less Cool Project</h3>
+                        <p>Some Text</p>
+                    </div>
+                    <div class="card-mid-left">
+                        <h3>Impossible App Project</h3>
+                        <p>Some Text</p>
+                    </div>
+                    <div class="card-mid-right">
+                        <h3>Easy Peasy App</h3>
+                        <p>Some Text</p>
+                    </div>
+                    <div class="card-bottom-left">
+                        <h3>Ad Blocker</h3>
+                        <p>Some Text</p>
+                    </div>
+                    <div class="card-bottom-right">
+                        <h3>Money Maker</h3>
+                        <p>Some Text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements-trending">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcements-list">
 
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <img src="Assets/Icons/dashboard.svg"
-                 height=60rem width=70rem>
-        </div>
-        <div class="nav-icons">
-            <div class="home">
-                <img src="Assets/Icons/home-outline.svg"
-                     height=30rem width=30rem>
-                <p>Home</p>
-            </div>
-            <div class="profile">
-                <img src="Assets/Icons/profile-outline.svg"
-                     height=30rem width=30rem>
-                <p>Profile</p>
-            </div>
-            <div class="messages">
-                <img src="Assets/Icons/message.svg"
-                     height=30rem width=30rem>
-                <p>Messages</p>
-            </div>
-            <div class="history">
-                <img src="Assets/Icons/clock-outline.svg"
-                     height=30rem width=30rem>
-                <p>History</p>
-            </div>
-            <div class="tasks">
-                <img src="Assets/Icons/tasks.svg"
-                     height=30rem width=30rem>
-                <p>Tasks</p>
-            </div>
-            <div class="community">
-                <img src="Assets/Icons/community.svg"
-                     height=30rem width=30rem>
-                <p>Communities</p>
-            </div>
-        </div>
-        <div class="setting">
-            <div class="settings">
-                <img src="Assets/Icons/settings.svg"
-                     height=30rem width=30rem>
-                <p>Settings</p>
-            </div>
-            <div class="support">
-                <img src="Assets/Icons/support.svg"
-                     height=30rem width=30rem>
-                <p>Support</p>
-            </div>
-            <div class="privacy">
-                <img src="Assets/Icons/privacy.svg"
-                     height=30rem width=30rem>
-                <p>Privacy</p>
-            </div>
-        </div>
-    </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <div class="trending-list">
 
-    <div class="main-content">
-
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
