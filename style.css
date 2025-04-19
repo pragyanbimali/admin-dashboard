@@ -52,7 +52,7 @@
     justify-content: start;
     align-items: center;
     row-gap: 1rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .nav-icons > div, 
