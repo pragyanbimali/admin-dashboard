@@ -1,9 +1,3 @@
-# admin-dashboard
-
-Of course! Here's a clean and professional **GitHub README** you can use for your Admin Dashboard project built with **Flexbox** and **Grid**:
-
----
-
 # Admin Dashboard
 
 A responsive **Admin Dashboard** layout built using **HTML**, **CSS Grid**, and **Flexbox**.
