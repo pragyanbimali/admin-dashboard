@@ -25,7 +25,8 @@
         "bottom-row"
     ;
     background-color: whitesmoke;
-    box-shadow: 5px 5px 15px gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }   
 
 .top-header-area {
@@ -48,7 +49,7 @@
     height: 2rem;
     border-radius: 1rem;
     border: none;
-    background-color: rgb(210, 215, 220);
+    background-color: rgb(230, 235, 243);
     padding: 1rem;
 }
 
@@ -62,16 +63,65 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 2rem;
+    margin-right: 3rem;
     gap: 1rem;
 }
 
 .hero-logo a {
     text-decoration: none;
     color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.bottom-header-area {
+    grid-area: bottom-row;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    align-items: center;
+}
+
+.hi-text-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hi-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.small-hi-text {
+    font-size: 0.85rem;  
+    font-weight: bold;
+}
+
+.bigger-hi-text {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.header-button-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3rem;
+    gap: 2rem;
+}
+
+.button {
+    background-color: rgb(27, 142, 221);
+    border-radius: 3.5rem;
+    font-size: 1rem;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    height: 2.5rem;
+    width: 7rem;
+}
+
 
 
 /* Sidebar Styling */
@@ -127,4 +177,45 @@
 /* Main Content Styling */
 .main-content {
     grid-area: content;
+    background-color: rgb(230, 235, 243);
+    display: grid;
+    grid-template-areas: 
+        "projects announcements";
+}
+
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+} 
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    /* grid-template-areas: 
+        "card-top-left card-top-right"
+        "card-mid-left card-mid-right"
+        "card-bottom-left card-bottom-right"; */
+    gap: 2rem;
+}
+
+.projects-list > div {
+    height: 12rem;
+    width: 28rem;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-trending {
+    grid-area: announcements;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-weight: 550;
 }
