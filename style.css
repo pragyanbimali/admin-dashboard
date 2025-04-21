@@ -181,6 +181,7 @@
     display: grid;
     grid-template-areas: 
         "projects announcements";
+    gap: 2rem;
 }
 
 .projects {
@@ -206,34 +207,62 @@
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: all 0.3s ease;
 }
   
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-  
-/* Optional: glowing highlight on hover */
-.card:hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: rgba(255, 255, 0, 0.1);
-    z-index: -1;
+    box-shadow: 0px 8px 16px rgb(27, 142, 221);
 }
 
+.card p {
+    color: gray;
+    font-size: 0.85rem;
+}
 
 .announcements-trending {
     grid-area: announcements;
     margin-top: 2rem;
+    display: grid;
+    grid-template-rows: max-content;
+    row-gap: 2rem;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: max-content;
+    gap: 1rem;
+}
+
+.announcements-list {
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    gap: 4px;
+}
+
+.announcement-item {
+    padding: 8px;
+}
+
+.announcement-item p {
+    color: gray;
+    font-size: 0.85rem;
+}
+
+.ann-item1,
+.ann-item2 {
+    border-bottom: 1px solid gray;
+}
+
+.trending {
 }
 
 h3 {
