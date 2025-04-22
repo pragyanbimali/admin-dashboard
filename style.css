@@ -244,6 +244,7 @@
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 16px rgb(27, 142, 221);
+    cursor: pointer;
 }
 
 .card p {
@@ -333,4 +334,9 @@ h3 {
     font-size: 0.75rem;
     color: gray;
     margin-top: 2px;
+}
+
+.announcements-list div:hover,
+.trending-list div:hover {
+    cursor: pointer;
 }
